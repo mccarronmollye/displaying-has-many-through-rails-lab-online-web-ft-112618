@@ -40,8 +40,7 @@ describe "patients", type:  :feature do
         expect(page).to have_content("Name: Bart Simpson Number of Appointments: 1")
       end
     end
-  end
-
+  end 
   describe "#show page" do
     it "shows all of a patient's appointment times in a human readable format" do
       visit patient_path(@bart)
@@ -53,5 +52,4 @@ describe "patients", type:  :feature do
       expect(page).to have_link("Meredith Grey", href: doctor_path(@meredith))
     end
   end
-
 end
